@@ -1,0 +1,23 @@
+{
+  "name": "relative-require",
+  "version": "0.0.1",
+  "description": "realtive require",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nachos/relative-require"
+  },
+  "keywords": [
+    "relative",
+    "require"
+  ],
+  "author": "Nachos team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nachos/relative-require/issues"
+  },
+  "homepage": "https://github.com/nachos/relative-require"
+}
