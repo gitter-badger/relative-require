@@ -2,10 +2,15 @@
   "name": "relative-require",
   "version": "0.0.1",
   "description": "realtive require",
-  "main": "index.js",
+  "main": "lib\\index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coveralls": "gulp coveralls"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nachos/relative-require"
@@ -19,5 +24,22 @@
   "bugs": {
     "url": "https://github.com/nachos/relative-require/issues"
   },
-  "homepage": "https://github.com/nachos/relative-require"
+  "homepage": "https://github.com/nachos/relative-require",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "git-validate": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-mocha": "^2.1.2",
+    "jshint-stylish": "^2.0.1",
+    "lazypipe": "^0.2.4",
+    "run-sequence": "^1.1.1"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  }
 }
